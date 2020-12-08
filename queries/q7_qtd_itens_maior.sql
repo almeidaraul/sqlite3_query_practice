@@ -1,0 +1,1 @@
+select n_name, sum(lineitem.l_quantity) from nation inner join (lineitem inner join (customer inner join orders on o_custkey = c_custkey) on lineitem.l_orderkey = orders.o_orderkey) on customer.c_nationkey = nation.n_nationkey group by c_nationkey having sum(lineitem.l_quantity) > 62000 order by count(*) desc;
