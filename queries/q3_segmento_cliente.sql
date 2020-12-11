@@ -1,1 +1,1 @@
-select c_mktsegment, count(*) from customer group by c_mktsegment;
+SELECT c_mktsegment, COUNT(*) FROM CUSTOMER GROUP BY c_mktsegment;

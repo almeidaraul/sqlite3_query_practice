@@ -1,1 +1,1 @@
-select distinct(r_name) from REGION;
+SELECT DISTINCT(r_name) FROM REGION;

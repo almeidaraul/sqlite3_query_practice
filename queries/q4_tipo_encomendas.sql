@@ -1,1 +1,1 @@
-select distinct(o_orderstatus) from orders;
+SELECT DISTINCT(o_orderstatus) FROM ORDERS;
