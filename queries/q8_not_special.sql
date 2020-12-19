@@ -1,7 +1,7 @@
 SELECT COUNT(*) FROM (
-	SELECT DISTINCT c_custkey FROM CUSTOMER C 
+	SELECT DISTINCT c_custkey FROM CUSTOMER
 	EXCEPT
-	SELECT DISTINCT c_custkey FROM CUSTOMER C INNER JOIN ORDERS O 
-	ON C.c_custkey = O.o_custkey 
-	WHERE O.o_comment LIKE "%special request%"
+	SELECT DISTINCT c_custkey FROM CUSTOMER INNER JOIN ORDERS
+	ON c_custkey = o_custkey 
+	WHERE o_comment LIKE "%special request%"
 );
